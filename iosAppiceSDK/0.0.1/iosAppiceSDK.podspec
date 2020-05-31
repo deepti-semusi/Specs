@@ -34,7 +34,7 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/deepti-semusi/iosAppiceSDK.git", :tag => "#{spec.version}" }
   #spec.source       = { :git => "https://github.com/deepti-semusi/iosAppiceSDK.git", :tag => "master" }
 
-  spec.source_files  = "iosAppiceSDK", "iosAppiceSDK/**/*.{h}"
+  spec.source_files  = "iosAppiceSDK", "iosAppiceSDK/**/*.{m,h}"
   spec.exclude_files = "iosAppiceSDK/Pods"
 
   #spec.public_header_files = "*.h"
@@ -79,6 +79,6 @@ Pod::Spec.new do |spec|
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   #spec.vendored_frameworks = "iosAppiceSDK.framework"
   spec.dependency "BugfenderSDK", "~> 1.7"
-
+  spec.dependency "Reachability"
 
 end
